@@ -1,0 +1,25 @@
+.swiper-main {
+  width: 100%;
+  object-fit: cover;
+}
+
+swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+div.swiper-button-next {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white !important;
+}
+
+swiper-container::part(button-prev) {
+  color: white;
+  left: calc(20% - 30px);
+}
+
+swiper-container::part(button-next) {
+  color: white;
+  right: calc(20% - 30px);
+}

@@ -1,0 +1,68 @@
+<app-header isStiky=""></app-header>
+<div class="container-mini seaction-header">
+  <div class="go-back left"><a href="/login">&#60; Back to sign</a></div>
+  <div class="login-register-header big-text-header">Create an account</div>
+</div>
+<form class="login-register-box container-mini">
+  <div class="form-name">Registration</div>
+
+  <div class="registration-in-middle">
+    <div class="form-floating">
+      <input
+        class="login-register-inputs form-control"
+        id="floatingInput"
+        type="text"
+        placeholder="Name"
+      />
+      <label for="floatingInput">Name</label>
+    </div>
+    <select
+      class="form-select login-register-inputs"
+      aria-label="Default select example"
+    >
+      <option value="0" selected>Chisinau</option>
+      <option value="1">Balti</option>
+    </select>
+    <div class="form-floating">
+      <input
+        type="tel"
+        class="form-control login-register-inputs"
+        id="floatingPassword"
+        placeholder="Phone"
+      />
+      <label for="floatingPassword">Phone</label>
+    </div>
+    <div class="form-floating">
+      <input
+        class="login-register-inputs form-control"
+        id="floatingInput"
+        type="email"
+        placeholder="Email"
+      />
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control login-register-inputs"
+        id="floatingPassword"
+        placeholder="Password"
+      />
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control login-register-inputs"
+        id="floatingPassword"
+        placeholder="Confirm password"
+      />
+      <label for="floatingPassword">Confirm password</label>
+    </div>
+    <button class="login-register-button space-regist-button" type="submit">
+      Send
+    </button>
+  </div>
+</form>
+<app-footer></app-footer>

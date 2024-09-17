@@ -1,0 +1,61 @@
+.border-footer {
+  margin: 0;
+  margin: auto;
+  border-top: 7px solid #8d0c02;
+  width: 90%;
+}
+.footer-content-padding {
+  padding: 100px 0;
+}
+
+.footer-category-name {
+  color: #ffd905;
+  font-size: 1.25em;
+  margin-bottom: 25px;
+  padding-right: 30px;
+}
+
+div a p {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.875em;
+}
+div a {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+.categorys-footer {
+  width: 50%;
+}
+div a i {
+  font-size: 25px;
+  color: white;
+  margin: 5px;
+}
+.footer-input {
+  font-family: "Futura New Medium", sans-serif;
+  padding: 15px 20px;
+  width: 75%;
+}
+.footer-button {
+  font-size: 0.875em;
+  font-family: "Futura New Book", sans-serif;
+  color: #fff;
+  background-color: #131213;
+  border: 2px solid #706f70;
+  border-radius: 6px;
+  padding: 17px 30px;
+  margin-left: 7px;
+}
+.subscribe-form {
+  width: 390px;
+}
+
+.footer-images {
+  margin: 20px 0;
+}
+
+div p {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.875em;
+  text-decoration: underline;
+}

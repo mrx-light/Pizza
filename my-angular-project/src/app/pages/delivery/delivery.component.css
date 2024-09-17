@@ -1,0 +1,80 @@
+.title {
+  color: white;
+  margin: 40px 0;
+}
+
+.location {
+  margin: 10px 0px;
+  color: white;
+
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.location:first-child::after {
+  content: "|";
+  color: white;
+  padding: 0 25px;
+}
+.location:hover {
+  color: #ffd800;
+}
+.current {
+  color: #ffd800;
+}
+
+table {
+  font-family: "Directo Light", sans-serif;
+  font-size: 1.125em;
+  color: #fff;
+  margin: 50px 0;
+  line-height: 1.775em;
+}
+
+td {
+  width: 50%;
+  vertical-align: initial;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: 700;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  font-weight: bold;
+}
+
+.menu {
+  font-family: "Futura New Demi", sans-serif;
+  font-size: 1.375em;
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 17px;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+  width: 34%;
+  margin: 50px auto;
+  display: block;
+}
+
+.menu:hover {
+  background-color: #ffd905;
+  color: #000;
+  border-color: #ffd905;
+}
+
+.receipt h2,
+.receipt p {
+  color: #fff;
+  padding: 5px 0 5px 20px;
+}

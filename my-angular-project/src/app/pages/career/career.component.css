@@ -1,0 +1,152 @@
+.input-row {
+  width: 100%;
+}
+
+.pre-text-item {
+  width: 20%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  font-family: "Futura New Heavy", sans-serif;
+  color: #444;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input-row-item {
+  width: 80%;
+  margin-top: 10px;
+  font-family: "Futura New Book", sans-serif;
+  border: 1px solid #bfbfbf;
+  outline: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 7px;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+.input-row input[type="file"] {
+  width: 0;
+  height: 0;
+}
+
+.job-tab {
+  background-color: #f1f1f1;
+  border: 1px solid #d8d8d8;
+  border-radius: 0 5px 5px 5px;
+  padding: 15px;
+  font-size: 1.125em;
+  font-family: "Futura New Book", sans-serif;
+  color: #444;
+  min-height: auto;
+}
+
+.flex-wrap-carrer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-checkbox {
+  width: 24%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.input-checkbox label {
+  font-size: 1.125em;
+  font-family: "Futura New Book", sans-serif;
+  color: #444;
+}
+
+.input-checkbox input,
+.input-radio-details div input {
+  height: 18px;
+  min-width: 18px;
+  margin-right: 10px;
+  border: 4px solid #d8d8d8;
+  background-color: #fff;
+  border-radius: 5px;
+  background-size: 60%;
+  position: relative;
+}
+
+textarea {
+  border: 1px solid #d8d8d8;
+  outline: 0;
+  font-family: "Futura New Book", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  padding: 13px 10px;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+  resize: none;
+  width: 100%;
+}
+
+.box-border-details {
+  background-color: #f1f1f1;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  padding: 20px;
+  height: 170px;
+}
+
+.box-border-details div {
+  margin-bottom: 10px;
+}
+
+.job-names-divisions {
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-bottom: none;
+  font-family: "Futura New Book", sans-serif;
+  font-size: 1.25em;
+  color: #262626;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.box-criteria {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.input-radio-details {
+  font-size: 1.125em;
+  font-family: "Futura New Book", sans-serif;
+  color: #444;
+}
+
+.send-button {
+  text-align: center;
+  color: #000;
+  font-family: "Futura New Demi", sans-serif;
+  font-size: 1.375em;
+  background-color: #ffd800;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+  width: 33.333333%;
+  display: block;
+}
+
+.jobs-criteria {
+  height: 45px;
+  margin: 20px 0;
+  font-family: "Futura New Book", sans-serif;
+  font-size: 1.25em;
+  color: #262626;
+  font-weight: 700;
+}
+
+.send-button:hover {
+  background-color: #e6c200;
+}

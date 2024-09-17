@@ -1,0 +1,67 @@
+.header-separator {
+  font-family: "Futura New Medium", sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.header-separator::before,
+.header-separator::after {
+  display: inline-block;
+  content: "";
+  border-bottom: 3px solid white;
+  width: 80%;
+  margin: 0;
+}
+
+
+
+form > * {
+  display: block;
+}
+
+.login-section {
+  width: 50%;
+}
+
+.login-section * {
+  width: 100%;
+}
+
+.login-with-account {
+  width: 45%;
+  margin: 0;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.login-with-account * {
+  width: 100;
+}
+
+.login-accounts {
+  margin: 16px;
+  text-align: center;
+  font-family: "Futura New Medium", sans-serif;
+  font-size: 1.125em;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  background-color: darkslategray;
+}
+
+.login-register {
+  font-family: "Futura New Demi", sans-serif;
+  font-size: 1.375em;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}

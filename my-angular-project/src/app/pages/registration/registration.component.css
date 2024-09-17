@@ -1,0 +1,28 @@
+.registration-in-middle {
+  width: 50%;
+  margin: 0;
+  margin: auto;
+}
+.registration-in-middle * {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.space-regist-button {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.seaction-header {
+  display: flex;
+  align-items: center;
+}
+
+.go-back {
+  flex: 1;
+}
+
+.seaction-header::after {
+  flex: 1;
+  content: "";
+}

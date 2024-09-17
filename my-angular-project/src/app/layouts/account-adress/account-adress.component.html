@@ -1,0 +1,101 @@
+<div class="account-data">
+  <a
+    class="add-item"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#collapseExample"
+    aria-expanded="false"
+    aria-controls="collapseExample"
+  >
+    Add a new address
+  </a>
+
+  <div class="collapse" id="collapseExample">
+    <form action="POST">
+      <div class="preff">* Fill in all required fields</div>
+
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Chișinău</option>
+        <option value="1">s. Vatra, mun. Chișinău</option>
+        <option value="2">s. Tohatin, mun. Chișinău</option>
+        <option value="3">s. Stăuceni, mun. Chișinău</option>
+        <option value="4">s. Grătiești, mun. Chișinău</option>
+        <option value="5">s. Dumbrava, mun. Chișinău</option>
+        <option value="6">s. Bubuiecii, mun. Chișinău</option>
+        <option value="7">Balti</option>
+      </select>
+      <div>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Name *"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Street *"
+        />
+      </div>
+      <div class="d-flex justify-content-between adress-value-required">
+        <div >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="№ block *"
+          />
+        </div>
+        <div class="">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Ap. *"
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-between adress-value-unrequired">
+        <div>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Entrance"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Floor"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Entrance door code"
+          />
+        </div>
+      </div>
+      <div>
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter your phone number to confirm the order *"
+        />
+      </div>
+      <div class="adress-buttons">
+        <button class="button-cancel">Cancel</button>
+        <button class="button-edit">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

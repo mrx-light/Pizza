@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+a {
+  text-decoration: none;
+}
+
+.container-mini {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.login-register-box {
+  padding: 25px 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.login-register-inputs {
+  font-family: "Futura New Book", sans-serif;
+  border: 1px solid #bfbfbf;
+  outline: 0;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 7px;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.form-name {
+  font-family: "Futura New Medium", sans-serif;
+  font-size: 1.875em;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.login-register-button {
+  text-align: center;
+  color: #000;
+  font-family: "Futura New Demi", sans-serif;
+  font-size: 1.375em;
+  background-color: #ffd800;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+  margin-top: 20px;
+}
+
+
+
+.login-register-header {
+  text-align: center;
+  font-size: 2.375em;
+  color: #fff;
+  padding: 55px 0;
+  position: relative;
+}
+
+.account-data {
+  background-color: #f1f1f1;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.button-cancel,
+.button-edit {
+  font-family: "Futura New Book", sans-serif;
+  color: #5b5b5b;
+  font-size: 1.375em;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  padding: 13px;
+  overflow: hidden;
+  position: relative;
+  transition: background-image 0.5s;
+}
+
+.button-cancel {
+  background-image: linear-gradient(to bottom, #f8f8f8 0, #dedede 100%);
+}
+
+.button-cancel:hover {
+  background-image: linear-gradient(to bottom, #dedede 0, #dedede 100%);
+}
+
+.button-edit {
+  background-image: linear-gradient(to bottom, #ffe800 0, #ffbc00 100%);
+}
+
+.button-edit:hover {
+  background-image: linear-gradient(to bottom, #ffbc00 0, #ffbc00 100%);
+}

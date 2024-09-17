@@ -1,0 +1,41 @@
+<app-header isStiky="isstiky"></app-header>
+<div class="container-extends">
+  <div class="img-header">
+    <div class="img-header-content">
+      <div class="img-header-title">Feedback</div>
+      <div class="img-header-subtitles">
+        <p>
+          All feedbacks are saved on the website and will be sent to our email.
+        </p>
+        <p>
+          At the moment, all your feedback messages go to the inbox of the
+          marketing director, the chief-technologist, the quality control
+          manager, the industrial complex manager and to the office manager.
+        </p>
+      </div>
+    </div>
+  </div>
+  <form action="POST">
+    <div class="form-title">Fill information about you</div>
+    <div class="account-data">
+      <div class="account-row">
+        <label class="pre-text-item" for="name">Name *</label>
+        <input class="form-input" type="text" id="name" />
+      </div>
+      <div class="account-row">
+        <label class="pre-text-item" for="email">Email *</label>
+        <input class="form-input" type="email" id="emaiL" />
+      </div>
+      <div class="account-row">
+        <label class="pre-text-item" for="phone">Phone</label>
+        <input class="form-input" type="number" id="phone" />
+      </div>
+      <div class="account-row d-flex align-items-start">
+        <label class="pre-text-item" for="message">Message</label>
+        <textarea class="form-input" type="text" id="messege"></textarea>
+      </div>
+    </div>
+    <button class="send-button" type="submit">Sent</button>
+  </form>
+</div>
+<app-footer></app-footer>

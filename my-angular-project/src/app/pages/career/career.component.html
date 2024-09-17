@@ -1,0 +1,215 @@
+<app-header isStiky="isstiky"></app-header>
+<div class="container">
+  <div class="account-header">
+    <div class="division-name">Fill information about you</div>
+    <form action="POST">
+      <div class="account-data">
+        <div class="input-row">
+          <label class="pre-text-item" for="name">Name *</label>
+          <input class="input-row-item" id="name" type="text" />
+        </div>
+        <div class="input-row">
+          <label class="pre-text-item" for="">Old *</label>
+          <input class="input-row-item" type="number" />
+        </div>
+        <div class="input-row">
+          <label class="pre-text-item" for="">Phone *</label>
+          <input class="input-row-item" type="number" />
+        </div>
+        <div class="input-row">
+          <label class="pre-text-item" for="">Email *</label>
+          <input class="input-row-item" type="email" />
+        </div>
+        <div class="input-row">
+          <label class="pre-text-item" for="">Upload your CV *</label>
+          <span class="file-input-item">
+            <input type="file" id="fileCV" />
+            <label class="input-row-item clearfix" for="fileCV">
+              <span>Drag and drop your file here</span>
+              <span style="float: right">Search Files</span>
+            </label>
+          </span>
+        </div>
+      </div>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a
+            class="nav-link active job-names-divisions"
+            aria-current="page"
+            (click)="tabJobsChange('restaurantsJobs')"
+            >Restaurant Jobs:</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active job-names-divisions"
+            aria-current="page"
+            (click)="tabJobsChange('factoryJobs')"
+            >Factory Jobs:
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active job-names-divisions"
+            aria-current="page"
+            (click)="tabJobsChange('officeJobs')"
+            >Office Jobs:</a
+          >
+        </li>
+      </ul>
+      <div [ngSwitch]="tabsValue">
+        <div *ngSwitchCase="'restaurantsJobs'" class="job-tab flex-wrap-carrer">
+          <div class="input-checkbox">
+            <input type="checkbox" id="administrator" />
+            <label for="administrator">Administrator</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="bartender" />
+            <label for="bartender">Bartender</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="cook" />
+            <label for="cook">Cook</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="dessertMaster" />
+            <label for="dessertMaster">Dessert master</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="waiter" />
+            <label for="waiter">Waiter</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="deliveryOperator" />
+            <label for="deliveryOperator">Delivery operator</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="cashier" />
+            <label for="cashier">Cashier</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="deliveryDriver" />
+            <label for="deliveryDriver">Delivery driver</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="handyman" />
+            <label for="handyman">Handyman</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="dishwasher" />
+            <label for="dishwasher">Dishwasher</label>
+          </div>
+        </div>
+        <div *ngSwitchCase="'factoryJobs'" class="job-tab flex-wrap-carrer">
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Tehnologist</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Confectioner</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Baker</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Operator</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Driver (category B, C)</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Deridicatoare</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Porter</label>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" />
+            <label for="">Storekeeper</label>
+          </div>
+        </div>
+        <div *ngSwitchCase="'officeJobs'" class="textarea-container job-tab">
+          <div>Write the desired position:</div>
+          <div class="input-row">
+            <textarea class="flex-wrap-carrer"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex width-details">
+        <div class="box-criteria">
+          <div class="jobs-criteria">What languages do you know?</div>
+          <div
+            class="box-border-details input-radio-details d-flex flex-column justify-content-around"
+          >
+            <div class="">
+              <input type="checkbox" id="romanian" />
+              <label for="romanian">Ro.</label>
+            </div>
+            <div>
+              <input type="checkbox" id="russian" />
+              <label for="russian">Ru.</label>
+            </div>
+            <div>
+              <input type="checkbox" id="english" />
+              <label for="english">Eng.</label>
+            </div>
+          </div>
+        </div>
+        <div class="box-criteria">
+          <div class="jobs-criteria">I am willing to work</div>
+          <div
+            class="box-border-details input-radio-details d-flex flex-column"
+          >
+            <div class="align-items-center d-flex">
+              <input
+                type="radio"
+                id="fullTime"
+                value="Full Time"
+                name="jobTime"
+              />
+              <label for="fullTime">Full time</label>
+            </div>
+            <div class="align-items-center d-flex">
+              <input
+                type="radio"
+                id="partTime"
+                value="Part Time"
+                name="jobTime"
+              />
+              <label for="partTime">Part time</label>
+            </div>
+          </div>
+        </div>
+        <div class="box-criteria">
+          <div class="jobs-criteria">In what restaurant, you want to work?</div>
+          <div
+            class="box-border-details input-radio-details d-flex justify-content-around flex-column"
+          >
+            <div>
+              <input type="checkbox" id="andys" />
+              <label for="andys">Andy's Pizza</label>
+            </div>
+            <div>
+              <input type="checkbox" id="placinte" />
+              <label for="placinte">La Placinte</label>
+            </div>
+            <div>
+              <input type="checkbox" id="cacao" />
+              <label for="cacao">Ciao Cacao</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" style="margin: 0 auto" class="send-button">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

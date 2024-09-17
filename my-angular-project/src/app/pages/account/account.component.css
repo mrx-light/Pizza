@@ -1,0 +1,57 @@
+.account-header {
+  padding: 50px 30px;
+  padding-bottom: 60px;
+  background-color: #fff;
+}
+
+.user-nav-item {
+  list-style: none;
+}
+
+.user-nav-item a {
+  color: #444;
+  font-size: 1.125em;
+  font-size: 21px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.5s;
+  cursor: pointer;
+}
+
+.user-nav-item a:hover {
+  border-bottom: 1px solid #444;
+  transition: border-color 0.5s;
+}
+
+.user-nav-item-line::before {
+  content: "|";
+  padding: 0 30px;
+  color: #b2b2b2;
+  text-align: right;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 1400px) {
+  .user-nav-item-line::before {
+    content: "";
+    padding: 0 10px;
+    color: #b2b2b2;
+    text-align: right;
+    font-size: 21px;
+  }
+}
+
+.user-nav-title {
+  font-family: "Futura New Heavy", sans-serif;
+  color: #444;
+  font-size: 2.375em;
+  margin-right: 4.546%;
+  line-height: 1;
+}
+
+.division-name {
+  margin: 20px 0;
+  font-family: "Futura New Book", sans-serif;
+  font-size: 1.25em;
+  color: #262626;
+  font-weight: 700;
+}

@@ -1,0 +1,94 @@
+.img-header {
+  font-family: "Futura New Heavy", sans-serif;
+  height: 683px;
+  background-image: url(./../../../assets/img/table.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img-header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%);
+  height: 65%;
+}
+
+.container-extends {
+  max-width: 1366px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.img-header-title {
+  font-family: "Futura New Medium", sans-serif;
+  font-size: 6.25em;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.img-header-subtitles {
+  max-width: 850px;
+  font-size: 1.5em;
+  font-family: "Directo Light", sans-serif;
+  color: #fff;
+  line-height: 1.35em;
+  margin-top: 20px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.img-header-content {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+form {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.form-input {
+  width: 80%;
+  font-family: "Futura New Book", sans-serif;
+  border: 1px solid #bfbfbf;
+  outline: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 7px;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+
+.form-title {
+  margin: 20px 0;
+  font-family: "Futura New Book", sans-serif;
+  font-size: 1.25em;
+  color: #262626;
+  font-weight: 700;
+}
+
+textarea {
+  height: 200px;
+}
