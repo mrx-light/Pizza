@@ -8,3 +8,15 @@
 
 a{ text-decoration: none;
 color: white;}
+
+.cellphone-num {
+  font-family: "Futura New Light", sans-serif;
+  color: rgba(255, 255, 255, .5);
+  font-size: 1.125em;
+  position: relative;
+  padding-bottom: 15px;
+  display: inline-block;
+  transform: translateY(7px);
+  z-index: 2000;
+  cursor: pointer;
+}

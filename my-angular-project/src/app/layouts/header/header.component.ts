@@ -1,15 +1,19 @@
-import { CommonModule, NgIf } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {Component, Input, signal} from '@angular/core';
+import {NgOptimizedImage} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-header',
   standalone: true,
 
-  imports: [],
+  imports: [
+    NgOptimizedImage,
+    RouterLink
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
   @Input() isStiky = 'sticky-top';
+  cellphoneNum = signal<string>("Chisinau: 03")
 }
