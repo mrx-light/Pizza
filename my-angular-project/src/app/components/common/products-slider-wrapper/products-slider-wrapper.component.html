@@ -1,10 +1,15 @@
-<swiper-container navigation="true" rewind="true" slides-per-view="5 ">
-  <swiper-slide class="swiper-products-slider"><app-product-card /></swiper-slide>
-  <swiper-slide><app-product-card /></swiper-slide>
-  <swiper-slide><app-product-card /></swiper-slide>
-  <swiper-slide><app-product-card /></swiper-slide>
-  <swiper-slide><app-product-card /></swiper-slide>
-  <swiper-slide><app-product-card /></swiper-slide>
-  <swiper-slide><app-product-card /></swiper-slide>
-  <swiper-slide><app-product-card /></swiper-slide>
+<ng-template [ngIf]="this.show">
+  <app-modal #modal [show]="this.show"  (close)="closeModalApp($event)" [product]="this.product"></app-modal>
+</ng-template>
+<div class="d-flex justify-content-between category-header">
+  <div class="category-header-text">{{ this.replaceCaracter() }}</div>
+  <div class="link-category d-flex align-items-center">Go To Menu {{ this.replaceCaracter() }} <i class="bi bi-chevron-right"></i></div>
+</div>
+<swiper-container class="swiper" navigation="true" rewind="true" slides-per-view="4 " #swiper>
+  @for (item of this.objProducts; let i = $index; track item.name) {
+    <swiper-slide><app-product-card (productContent)="passObject(item)" (isVisible)="showModal($event)" [objProduct]="item" /></swiper-slide>
+  }
 </swiper-container>
+<div class="modal-dialog modal-dialog-centered"></div>
+
+

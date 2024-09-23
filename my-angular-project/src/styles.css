@@ -10,6 +10,13 @@ a {
   width: 100%;
 }
 
+
+.container-regular {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
 .login-register-box {
   padding: 25px 20px;
   border: 1px solid #fff;
@@ -102,4 +109,8 @@ a {
 
 .button-edit:hover {
   background-image: linear-gradient(to bottom, #ffbc00 0, #ffbc00 100%);
+}
+
+.pointer {
+  cursor: pointer;
 }

@@ -1,5 +1,4 @@
 <app-header></app-header>
-
 <swiper-container
   navigation="true"
   pagination="true"
@@ -30,7 +29,62 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 </div>
-<!-- <button class="swiper-button-prev" (onclick)=""><i class="bi bi-chevron-left"></i></button>
-<button class="swiper-button-prev" (onclick)=""><i class="bi bi-chevron-right"></i></button> -->
 
-<app-products-slider-wrapper />
+<div class="container-regular position-relative">
+  @for (item of categoryProductObj | keyvalue; track $index) {
+    <app-products-slider-wrapper
+      [objProducts]="item.value"
+      [categoryName]="item.key"
+    />
+  }
+</div>
+
+<div class="life-container position-relative">
+  <swiper-container class="life-swipe" thumbs-swiper=".pagination" navigation="true"  #life>
+    <swiper-slide class="position-relative">
+      <h1 class="position-absolute">Andys Life sycle</h1>
+      <img class="" src="./../../../assets/products-img/Fasad.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./../../../assets/products-img/Kids.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./../../../assets/products-img/Atmosfere.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./../../../assets/products-img/Team.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./../../../assets/products-img/Salad.jpg" />
+    </swiper-slide>
+  </swiper-container>
+
+  <div class="position-absolute mini-img">
+    <swiper-container
+      class="pagination"
+      slides-per-view="5"
+      free-mode="true"
+      watch-slides-progress="true"
+      space-between="10"
+
+    >
+      <swiper-slide>
+        <img class="" src="./../../../assets/products-img/Fasad.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img class="" src="./../../../assets/products-img/Kids.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img class="" src="./../../../assets/products-img/Atmosfere.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./../../../assets/products-img/Team.jpg" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="./../../../assets/products-img/Salad.jpg" />
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</div>
+
+<app-footer />

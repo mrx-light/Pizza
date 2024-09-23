@@ -1,9 +1,17 @@
-<div class="card" style="width: 18rem">
-  <img src="..." class="card-img-top" alt="..." width="218px" height="310" />
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </p>
+<div class="box-product d-flex  justify-content-center flex-column">
+  <div class=" d-flex  justify-content-center ">
+    <img (click)="this.showModalApp()" class="img-card img-product" [src]="this.objProduct.imageUrl" [alt]="this.objProduct.name">
   </div>
+  <div class="box-header d-flex justify-content-between">
+    <span class="product-name">Pizza {{this.objProduct.name}}</span>
+    <i class="bi bi-info-circle text-white "></i>
+  </div>
+  <button class=" buy-button d-flex justify-content-between">
+    <span>{{this.objProduct.price}} mdl</span>
+    <span class="d-flex">
+      <span>Order</span>
+      <i class="bi bi-cart-plus space-cart"></i>
+    </span>
+  </button>
 </div>
+

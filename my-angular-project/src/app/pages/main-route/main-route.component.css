@@ -23,3 +23,43 @@ swiper-container::part(button-next) {
   color: white;
   right: calc(20% - 30px);
 }
+
+swiper-container.life-swipe::part(button-prev) {
+  color: white;
+  left: 10px;
+
+}
+
+swiper-container.life-swipe::part(button-next) {
+  color: white;
+  right: 10px;
+
+}
+
+.life-container {
+  max-width: 1366px;
+  margin: 60px auto 0;
+  position: relative;
+}
+
+
+.life-img {
+  width: 220px!important;
+  height: 140px;
+  cursor: pointer;
+}
+
+.life-img:hover {
+
+}
+
+
+.mini-img {
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.pagination {
+margin: 20px 20px 40px;
+}

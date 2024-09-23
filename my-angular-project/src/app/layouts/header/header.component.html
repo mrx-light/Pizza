@@ -1,7 +1,7 @@
 <header class="bg-black bg-opacity-75 {{ isStiky }}">
   <div class="container">
     <div class="d-flex py-3">
-      <div class="d-flex align-items-center" >
+      <div class="d-flex align-items-center">
         <a routerLink="/">
           <img
             ngSrc="./../../../assets/img/logo-25.svg"
@@ -12,27 +12,23 @@
       </div>
       <div class="w-100 mx-3">
         <div class="d-flex justify-content-between my-2">
-          <div class="dropdown cellphone-num">
-            <div
-              class="dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
+          <div class="dropdown-num cellphone-num">
+            <div class="">
+              {{ cellphoneNum() }}
             </div>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item">
-                <a>Chișinău : 022 210-210</a>
+            <ul class="dropdown-content-num">
+              <li>
+                <a #ch (click)="updateCellPhone('ch')">Chișinău: 022 210-210</a>
               </li>
-              <li class="dropdown-item">
-                <a href="#">Balti: 023 120-210</a>
+              <hr />
+              <li class="">
+                <a #bl (click)="updateCellPhone('bl')">Balti: 023 120-210</a>
               </li>
             </ul>
           </div>
           <div class="d-flex align-items-center">
             <div class="mx-2">
-              <a href="https://laplacinte.md/" target=”_blank”>
+              <a href="https://laplacinte.md/" target="”_blank”">
                 <img
                   ngSrc="./../../../assets/img/LaPlacinte.svg"
                   alt="iopta"
@@ -42,7 +38,7 @@
               </a>
             </div>
             <div class="mx-2">
-              <a href="https://ciaocacao.md/" target=”_blank”>
+              <a href="https://ciaocacao.md/" target="”_blank”">
                 <img
                   ngSrc="./../../../assets/img/CiaoCacao.svg"
                   alt="iopta"
@@ -52,9 +48,9 @@
               </a>
             </div>
             <div class="mx-2">
-              <a href="https://gustland.md/" target=”_blank”>
+              <a href="https://gustland.md/" target="”_blank”">
                 <img
-                  ngSrc="./../../../assets/img/Gustland.png"
+                  src="./../../../assets/img/Gustland.png"
                   alt="iopta"
                   width="74"
                   height="32"
@@ -63,41 +59,74 @@
             </div>
           </div>
           <div class="d-flex align-items-center m-1 fs-5">
-            <div><a class="text-secondary" routerLink="/feedback">Feedback</a></div>
+            <div><a class="top-links" routerLink="/feedback">Feedback</a></div>
             <div class="vr mx-2 text-white"></div>
-            <div><a class="text-secondary" routerLink="/contacts">Contacts</a></div>
+            <div><a class="top-links" routerLink="/contacts">Contacts</a></div>
             <div class="vr mx-2 text-white"></div>
-            <div><a class="text-secondary" routerLink="/delivery">Delivery</a></div>
+            <div><a class="top-links" routerLink="/delivery">Delivery</a></div>
           </div>
         </div>
         <div class="d-flex justify-content-between my-4">
-          <ul class="nav gap-4 align-items-center">
-            <li>
-              <button>Menu</button>
-              <ul></ul>
+          <ul class="pad nav gap-4 d-flex align-items-center position-relative">
+            <li class="menu header-list">
+              <a class="top-links position-relative"
+                >Menu <i class="bi bi-chevron-down icon-down-pad"></i
+              ></a>
+              <div class="menu-container">
+                <ul class="menu-category d-inline-block">
+                  @for (item of categoryList(); track item) {
+                    <li class="category-name">{{ item }}</li>
+                  }
+                </ul>
+              </div>
             </li>
-            <li><a href="#">Andy's Shop</a></li>
-            <li><a href="#"> Restaurants</a></li>
-            <li><a href="#">News</a></li>
-            <li>
-              <Button>Services</Button>
-              <ul></ul>
+            <li class="header-list">
+              <a class="top-links" href="#">Andy's Shop</a>
             </li>
-            <li><a href="#">Menu in Restaurant</a></li>
-            <li><a href="#">Career</a></li>
+            <li class="header-list">
+              <a class="top-links" href="#"> Restaurants</a>
+            </li>
+            <li class="header-list"><a class="top-links" href="#">News</a></li>
+            <li class=" services header-list position-relative">
+              <a class="top-links"
+                >Services <i class="bi bi-chevron-down icon-down-pad"></i
+              ></a>
+              <div class="services-container">
+                <ul class="services-category d-inline-block " >
+                  @for (item of servicesList(); track item) {
+                    <li class="category-name">{{ item }}</li>
+                  }
+                </ul>
+              </div>
+            </li>
+            <li class="header-list">
+              <a class="top-links" href="#">Menu in Restaurant</a>
+            </li>
+            <li class="header-list">
+              <a class="top-links" href="#">Career</a>
+            </li>
           </ul>
-          <div class="d-flex">
-            <div class="mx-4">
-              <i class="bi bi-person-add text-white fs-3 mx-2"></i>
-              <a routerLink="/login">Login</a>
+          <div class="d-flex align-items-center position-relative">
+            <div
+              class="mx-4 top-links login-container d-flex align-items-center"
+            >
+              <i class="bi bi-person-add fs-3 mx-2"></i>
+              <span routerLink="/login">Login</span>
             </div>
-            <div class="mx-4">
-              <i class="bi bi-basket text-white fs-3"></i>
-              <span
-                class="text-white rounded-circle bg-danger p-1 text-center count-products"
-              >
-                0
-              </span>
+            <div class="cart">
+              <div class="cart-icon">
+                <i class="bi bi-basket text-white fs-3 position-absolute"></i>
+                <span
+                  class="text-white rounded-circle bg-danger p-1 text-center count-products position-absolute cart-order-num"
+                >
+                  0
+                </span>
+              </div>
+              <div class="cart-products">
+                <div class="cart-container">
+                  {{ productsCart() }}
+                </div>
+              </div>
             </div>
           </div>
         </div>

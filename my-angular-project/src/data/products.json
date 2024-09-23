@@ -1,0 +1,534 @@
+{
+  "pizza": [
+    {
+      "name": "BBQ",
+      "ingredients": "Italian wheat flour, cheese, chicken meat, champion mushrooms, cream, Parmesan, truffle oil",
+      "weight": "580",
+      "price": "120",
+      "imageUrl": "./../../../../assets/products-img/BBQ.jpg"
+    },
+    {
+      "name": "Fattoria",
+      "ingredients": "Italian wheat flour, cheese, chicken meat, champignon mushrooms, cream, Parmesan, truffle oil",
+      "weight": "580",
+      "price": "120",
+      "imageUrl": "./../../../../assets/products-img/Fattoria.jpg"
+    },
+    {
+      "name": "Rancho",
+      "ingredients": "Italian wheat flour, tomato sauce, cheese, chicken meat, canned mushrooms, mayonnaise, marinated gogoshary.",
+      "weight": "580",
+      "price": "115",
+      "imageUrl": "./../../../../assets/products-img/Rancho.jpg"
+    },
+    {
+      "name": "Pepperoni",
+      "ingredients": "Italian wheat flour, tomato sauce, cheese, salami, hot paprika.",
+      "weight": "475",
+      "price": "120",
+      "imageUrl": "./../../../../assets/products-img/Pepperoni.jpg"
+    },
+    {
+      "name": "Neapolitana",
+      "ingredients": "Italian wheat flour, tomato sauce, cheese, ham, canned mushrooms, olives.",
+      "weight": "510",
+      "price": "115",
+      "imageUrl": "./../../../../assets/products-img/Neapolitana.jpg"
+    },
+    {
+      "name": "Margherita",
+      "ingredients": "Italian wheat flour, tomato sauce, cheese, fresh basil.",
+      "weight": "380",
+      "price": "95",
+      "imageUrl": "./../../../../assets/products-img/Margherita.jpg"
+    },
+    {
+      "name": "Tonno",
+      "ingredients": "Wheat flour, water, olive oil, yeast, salt, malt, tomato sauce, mozzarella, red onion, dill, tuna, olives, basil, spices.",
+      "weight": "500",
+      "price": "120",
+      "imageUrl": "./../../../../assets/products-img/Tonno.jpg"
+    },
+    {
+      "name": "Mario",
+      "ingredients": "Italian wheat flour, tomato sauce, chicken meat, cheese, dor blue cheese, sweet pepper, sausages, mayonnaise, spinach.",
+      "weight": "530",
+      "price": "115",
+      "imageUrl": "./../../../../assets/products-img/Mario.jpg"
+    },
+    {
+      "name": "Capricioasa",
+      "ingredients": "Italian wheat flour, tomato sauce, cheese, ham, canned mushrooms, mayonnaise, sheep cheese, eggplant, garlic.",
+      "weight": "600",
+      "price": "115",
+      "imageUrl": "./../../../../assets/products-img/Capricioasa.jpg"
+    },
+    {
+      "name": "Bianca",
+      "ingredients": "Italian wheat flour, cheese, cream cheese, cream, parmesan, mozzarella cheese, Tambov ham, fried champignon mushrooms, basil, oregano.",
+      "weight": "550",
+      "price": "115",
+      "imageUrl": "./../../../../assets/products-img/Bianca.jpg"
+    },
+    {
+      "name": "Diablo",
+      "ingredients": "Italian wheat flour, tomato sauce, cheese, salami, sausages, fresh mushrooms, sweet pepper, olives and hot peppers.",
+      "weight": "520",
+      "price": "115",
+      "imageUrl": "./../../../../assets/products-img/Diablo.jpg"
+    },
+    {
+      "name": "5Cheeses",
+      "ingredients": "Italian wheat flour, cheese, cream cheese, cream, mozzarella, parmesan, Dor Blue cheese, Brie cheese.",
+      "weight": "420",
+      "price": "115",
+      "imageUrl": "./../../../../assets/products-img/5Cheeses.jpg"
+    }
+  ],
+  "breakfast": [
+    {
+      "name": "English breakfast",
+      "ingredients": "Sausages, chicken eggs, red beans in sauce, mushrooms, ciabatta, cherry tomatoes, parsley, dill, spices.",
+      "weight": "380",
+      "price": "110",
+      "imageUrl": "./../../../../assets/products-img/EnglishBreakfast.jpg"
+    },
+    {
+      "name": "Scrob with jambon",
+      "ingredients": "Eggs, milk, butter, wheat flour, cherry tomatoes, lettuce, olive oil, ginger, curd cream, Tambov ham.",
+      "weight": "120/60/50/50",
+      "price": "110",
+      "imageUrl": "./../../../../assets/products-img/ScrobWithJambon.jpg"
+    },
+    {
+      "name": "Scrob with salmon",
+      "ingredients": "Eggs, milk, butter, wheat flour, cherry tomatoes, lettuce, olive oil, ginger, curd cream, Tambov ham.",
+      "weight": "120/60/50/50",
+      "price": "125",
+      "imageUrl": "./../../../../assets/products-img/ScrobWithSalmon.jpg"
+    },
+    {
+      "name": "Classic Omelette",
+      "ingredients": "Omelette, cherry tomatoes, cottage cheese, green salad, kalamata olives, dressing, spices. Contains allergens: eggs, milk, mustard.",
+      "weight": "350/30",
+      "price": "85",
+      "imageUrl": "./../../../../assets/products-img/ClassicOmelette.jpg"
+    },
+    {
+      "name": "Croque Madame",
+      "ingredients": "Cheese sauce, ciabatta, Tambov ham, chicken egg, cheese, bacon, green salad, dressing, spices. Contains allergens: gluten, eggs, milk, mustard.",
+      "weight": "230",
+      "price": "80",
+      "imageUrl": "./../../../../assets/products-img/CroqueMadame.jpg"
+    },
+    {
+      "name": "Crullers",
+      "ingredients": "Cheese (cheese, wheat flour, cream, semolina, sugar, vanilla) cream, cream cheese, apple sauce (strawberry, currant, cherry).",
+      "weight": "240/50/70",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/Margherita.jpg"
+    }
+  ],
+  "snaks": [
+    {
+      "name": "Vegetable and tuna snack",
+      "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+      "weight": "310",
+      "price": "85",
+      "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+    },
+    {
+      "name": "Сrusts with cheese and garlic",
+      "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+      "weight": "120",
+      "price": "30",
+      "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    }
+  ],
+  "soups": [
+    {
+      "name": "Vegetable and tuna snack",
+      "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+      "weight": "310",
+      "price": "85",
+      "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+    },
+    {
+      "name": "Сrusts with cheese and garlic",
+      "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+      "weight": "120",
+      "price": "30",
+      "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    },
+    {
+      "name": "Bruschetta with salmon",
+      "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+      "weight": "150",
+      "price": "90",
+      "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+    }
+  ],  "lunch_box": [
+  {
+    "name": "Vegetable and tuna snack",
+    "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+    "weight": "310",
+    "price": "85",
+    "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+  },
+  {
+    "name": "Сrusts with cheese and garlic",
+    "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+    "weight": "120",
+    "price": "30",
+    "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  }
+],  "paste": [
+  {
+    "name": "Vegetable and tuna snack",
+    "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+    "weight": "310",
+    "price": "85",
+    "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+  },
+  {
+    "name": "Сrusts with cheese and garlic",
+    "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+    "weight": "120",
+    "price": "30",
+    "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  }
+],  "cake": [
+  {
+    "name": "Vegetable and tuna snack",
+    "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+    "weight": "310",
+    "price": "85",
+    "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+  },
+  {
+    "name": "Сrusts with cheese and garlic",
+    "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+    "weight": "120",
+    "price": "30",
+    "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  }
+],  "main_dishes": [
+  {
+    "name": "Vegetable and tuna snack",
+    "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+    "weight": "310",
+    "price": "85",
+    "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+  },
+  {
+    "name": "Сrusts with cheese and garlic",
+    "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+    "weight": "120",
+    "price": "30",
+    "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  }
+],  "ice_cream": [
+  {
+    "name": "Vegetable and tuna snack",
+    "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+    "weight": "310",
+    "price": "85",
+    "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+  },
+  {
+    "name": "Сrusts with cheese and garlic",
+    "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+    "weight": "120",
+    "price": "30",
+    "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  }
+],  "salads": [
+  {
+    "name": "Vegetable and tuna snack",
+    "ingredients": "Tuna dip, nachos, cucumbers, sweet peppers, parsley, dill, lemon, spices.",
+    "weight": "310",
+    "price": "85",
+    "imageUrl": "./../../../../assets/products-img/VegetableAndTunaSnack.jpg"
+  },
+  {
+    "name": "Сrusts with cheese and garlic",
+    "ingredients": "Wheat flour, butter, parsley, garlic, Parmesan cheese.",
+    "weight": "120",
+    "price": "30",
+    "imageUrl": "./../../../../assets/products-img/СrustsWithCheeseAndGarlic.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  },
+  {
+    "name": "Bruschetta with salmon",
+    "ingredients": "Ciabatta, cream cheese, lightly salted salmon, salad mix, paprika flakes.",
+    "weight": "150",
+    "price": "90",
+    "imageUrl": "./../../../../assets/products-img/BruschettaWithSalmon.jpg"
+  }
+]
+}
