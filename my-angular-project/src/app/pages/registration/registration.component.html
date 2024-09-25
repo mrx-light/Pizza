@@ -3,64 +3,170 @@
   <div class="go-back left"><a href="/login">&#60; Back to sign</a></div>
   <div class="login-register-header big-text-header">Create an account</div>
 </div>
-<form class="login-register-box container-mini">
+<form class="login-register-box container-mini" [formGroup]="registrationForm">
   <div class="form-name">Registration</div>
+  <div class="text-white">
+   Conf Pass ==={{ registrationForm.controls.confirmPassword.errors | json }}=== <br>
+    Pass==={{ registrationForm.controls.password.errors | json }}===<br>
+     Name==={{ registrationForm.controls.name.errors | json }}===<br>
+    Email ==={{ registrationForm.controls.email.errors | json }}===<br>
+    City==={{ registrationForm.controls.city.errors | json }}===<br>
+    Phone==={{ registrationForm.controls.phone.errors | json }}===<br>
 
+  </div>
   <div class="registration-in-middle">
     <div class="form-floating">
       <input
+        formControlName="name"
         class="login-register-inputs form-control"
-        id="floatingInput"
+        id="sdd"
         type="text"
         placeholder="Name"
       />
-      <label for="floatingInput">Name</label>
+      <label for="sdd">Name</label>
+      @if (
+        registrationForm.controls.name.invalid &&
+        (registrationForm.controls.name.dirty ||
+          !registrationForm.controls.name.untouched)
+      ) {
+        @if (registrationForm.controls.name.errors?.["required"]) {
+          <small class="validation">*This field is required</small>
+        }
+        @if (registrationForm.controls.name.errors?.["minlength"]) {
+          <small class="validation">The name is too small</small>
+        }
+        @if (registrationForm.controls.name.errors?.["maxlength"]) {
+          <small class="validation">The name is too big</small>
+        }
+      }
     </div>
-    <select
-      class="form-select login-register-inputs"
-      aria-label="Default select example"
-    >
-      <option value="0" selected>Chisinau</option>
-      <option value="1">Balti</option>
-    </select>
+
+    <div class="position-relative">
+      <select
+        id="location"
+        formControlName="city"
+        class="form-control login-register-inputs s"
+      >
+        <option value="Chisinau">Chisinau</option>
+        <option value="Balti">Balti</option>
+      </select>
+
+      @if (registrationForm.controls.city.errors?.["diffrentCitys"]) {
+        <small class="validation">{{
+          registrationForm.controls.city.errors?.["diffrentCitys"]
+        }}</small>
+      }
+    </div>
     <div class="form-floating">
       <input
-        type="tel"
+        formControlName="phone"
+        type="number"
         class="form-control login-register-inputs"
-        id="floatingPassword"
+        id="tel"
         placeholder="Phone"
       />
-      <label for="floatingPassword">Phone</label>
+      <label for="tel">Phone</label>
+      @if (
+        registrationForm.controls.phone.invalid &&
+        (registrationForm.controls.phone.dirty ||
+          !registrationForm.controls.phone.untouched)
+      ) {
+        @if (registrationForm.controls.phone.errors?.["required"]) {
+          <small class="validation">*This field is required</small>
+        }
+        @if (registrationForm.controls.phone.errors?.["errNumber"]) {
+          <small class="validation">{{
+            registrationForm.controls.phone.errors?.["errNumber"]
+          }}</small>
+        }
+      }
     </div>
     <div class="form-floating">
       <input
+        formControlName="email"
         class="login-register-inputs form-control"
-        id="floatingInput"
+        id="mail"
         type="email"
         placeholder="Email"
       />
-      <label for="floatingInput">Email</label>
+      @if (
+        registrationForm.controls.email.invalid &&
+        (registrationForm.controls.email.dirty ||
+          !registrationForm.controls.email.untouched)
+        ) {
+        @if (registrationForm.controls.email.errors?.["required"]) {
+          <small class="validation">*This field is required</small>
+        }
+        @if (registrationForm.controls.email.errors?.["email"]) {
+          <small class="validation">*Plese introduse a email</small>
+        }
+        @if (registrationForm.controls.email.errors?.["maxlength"]) {
+          <small class="validation">*The Email is too big</small>
+        }
+        @if (registrationForm.controls.email.errors?.["usedEmail"]) {
+          <small class="validation">*{{registrationForm.controls.email.errors?.["usedEmail"]}}</small>
+        }
+      }
+      <label for="mail">Email</label>
     </div>
     <div class="form-floating">
       <input
+        formControlName="password"
         type="password"
         class="form-control login-register-inputs"
-        id="floatingPassword"
+        id="password"
         placeholder="Password"
       />
-      <label for="floatingPassword">Password</label>
+      <label for="password">Password</label>
+      @if (
+        registrationForm.controls.password.invalid &&
+        (registrationForm.controls.password.dirty ||
+          !registrationForm.controls.password.untouched)
+        ) {
+        @if (registrationForm.controls.password.errors?.["required"]) {
+          <small class="validation">*This field is required</small>
+        }
+        @if (registrationForm.controls.password.errors?.["minlength"]) {
+          <small class="validation">*The password is too small</small>
+        }
+        @if (registrationForm.controls.password.errors?.["maxlength"]) {
+          <small class="validation">*The password is too big</small>
+        }
+      }
     </div>
 
     <div class="form-floating">
       <input
+        formControlName="confirmPassword"
         type="password"
         class="form-control login-register-inputs"
-        id="floatingPassword"
+        id="confirmPassword"
         placeholder="Confirm password"
       />
-      <label for="floatingPassword">Confirm password</label>
+      <label for="confirmPassword">Confirm password</label>
+      @if (
+        registrationForm.controls.confirmPassword.invalid &&
+        (registrationForm.controls.confirmPassword.dirty ||
+          !registrationForm.controls.confirmPassword.untouched)
+        ) {
+        @if (registrationForm.controls.confirmPassword.errors?.["required"]) {
+          <small class="validation">*This field is required</small>
+        }
+        @if (registrationForm.controls.confirmPassword.errors?.["differentPassword"]) {
+          <small class="validation">{{registrationForm.controls.confirmPassword.errors?.["differentPassword"]}}</small>
+        }
+        @if (registrationForm.controls.confirmPassword.errors?.["maxlength"]) {
+          <small class="validation">*The Email is too big</small>
+        }
+      }
     </div>
-    <button class="login-register-button space-regist-button" type="submit">
+    <button
+      (click)="sendUser()"
+
+      class="login-register-button space-regist-button"
+      type="submit"
+    >
+<!--      [disabled]="!this.registrationForm.valid"-->
       Send
     </button>
   </div>

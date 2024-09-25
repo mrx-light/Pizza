@@ -65,6 +65,15 @@ a {
 }
 
 
+.login-register-button:disabled,
+.login-register-button[disabled]{
+  border: 1px solid #999999!important;
+  background-color: #cccccc !important;
+  color: #666666!important;
+}
+
+
+
 
 .login-register-header {
   text-align: center;

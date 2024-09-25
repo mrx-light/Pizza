@@ -38,7 +38,7 @@ form > * {
 }
 
 .login-with-account * {
-  width: 100;
+  width: 100%;
 }
 
 .login-accounts {

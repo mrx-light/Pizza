@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "asdsd"
+    }
+  ],
+  "users": [
+    {
+      "id": "8d49",
+      "name": "Petru Rares",
+      "city": "Chisinau",
+      "phone": "079926956",
+      "email": "pmalanici@gmail.com",
+      "password": "1234567890"
+    },
+    {
+      "id": "d771",
+      "name": "Ana",
+      "city": "Chisinau",
+      "phone": "079926956",
+      "email": "ana@gmail.com",
+      "password": "123123"
+    },
+    {
+      "id": "13f4",
+      "name": "Ion Creanga",
+      "city": "Chisinau",
+      "phone": 565656565,
+      "email": "koala@gmail.com",
+      "password": "1234123"
+    },
+    {
+      "id": "09b9",
+      "name": "Valeria Caldare",
+      "city": "Chisinau",
+      "phone": 5656565656,
+      "email": "valeria@gmail.com",
+      "password": "1231231"
+    },
+    {
+      "id": "76c5",
+      "name": "Koala Joaca",
+      "city": "Chisinau",
+      "phone": 777777777,
+      "email": "joaca@gmail.com",
+      "password": "123123123"
+    },
+    {
+      "id": "752e",
+      "name": "Yamal Koala",
+      "city": "Chisinau",
+      "phone": 999222111,
+      "email": "yamal@gmail.com",
+      "password": "0009990"
+    },
+    {
+      "id": "be62",
+      "name": "Ursus Ion",
+      "city": "Chisinau",
+      "phone": 666222321,
+      "email": "ursus@gmail.com",
+      "password": "6665556"
+    }
+  ]
+}

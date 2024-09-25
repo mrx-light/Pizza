@@ -5,3 +5,12 @@ export interface productsObjI {
   price: string;
   imageUrl: string;
 }
+
+export interface UserI {
+  name: string;
+  city: string;
+  phone: 0;
+  email: string;
+  password: string;
+  confirmPassword: string;
+}
